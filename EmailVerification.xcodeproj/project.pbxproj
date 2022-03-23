@@ -9,19 +9,37 @@
 /* Begin PBXBuildFile section */
 		9CFC76EF27EB649F00E50FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC76EE27EB649F00E50FCA /* AppDelegate.swift */; };
 		9CFC76F127EB649F00E50FCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC76F027EB649F00E50FCA /* SceneDelegate.swift */; };
-		9CFC76F327EB649F00E50FCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC76F227EB649F00E50FCA /* ViewController.swift */; };
+		9CFC76F327EB649F00E50FCA /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC76F227EB649F00E50FCA /* VerificationViewController.swift */; };
 		9CFC76F827EB64A100E50FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFC76F727EB64A100E50FCA /* Assets.xcassets */; };
 		9CFC76FB27EB64A100E50FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFC76F927EB64A100E50FCA /* LaunchScreen.storyboard */; };
+		9CFC770727EB6A8600E50FCA /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC770627EB6A8600E50FCA /* StatusLabel.swift */; };
+		9CFC770927EB6BC000E50FCA /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC770827EB6BC000E50FCA /* UIColor + Extension.swift */; };
+		9CFC770C27EB6CAA00E50FCA /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC770B27EB6CAA00E50FCA /* UIStackView + Extension.swift */; };
+		9CFC770E27EB6D1000E50FCA /* MailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC770D27EB6D1000E50FCA /* MailTextField.swift */; };
+		9CFC771027EB70B900E50FCA /* VerificationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC770F27EB70B800E50FCA /* VerificationButton.swift */; };
+		9CFC771227EB714D00E50FCA /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771127EB714D00E50FCA /* UIView + Extension.swift */; };
+		9CFC771427EB717000E50FCA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771327EB717000E50FCA /* GradientView.swift */; };
+		9CFC771627EB72EA00E50FCA /* MailsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771527EB72EA00E50FCA /* MailsCollectionView.swift */; };
+		9CFC771927EB738F00E50FCA /* MailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771827EB738F00E50FCA /* MailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9CFC76EB27EB649F00E50FCA /* EmailVerification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailVerification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFC76EE27EB649F00E50FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CFC76F027EB649F00E50FCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9CFC76F227EB649F00E50FCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CFC76F227EB649F00E50FCA /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		9CFC76F727EB64A100E50FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CFC76FA27EB64A100E50FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CFC76FC27EB64A100E50FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFC770627EB6A8600E50FCA /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
+		9CFC770827EB6BC000E50FCA /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		9CFC770B27EB6CAA00E50FCA /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		9CFC770D27EB6D1000E50FCA /* MailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailTextField.swift; sourceTree = "<group>"; };
+		9CFC770F27EB70B800E50FCA /* VerificationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationButton.swift; sourceTree = "<group>"; };
+		9CFC771127EB714D00E50FCA /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		9CFC771327EB717000E50FCA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9CFC771527EB72EA00E50FCA /* MailsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsCollectionView.swift; sourceTree = "<group>"; };
+		9CFC771827EB738F00E50FCA /* MailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				9CFC76ED27EB649F00E50FCA /* EmailVerification */,
+				9CFC770A27EB6C8600E50FCA /* Extensions */,
 				9CFC76EC27EB649F00E50FCA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +73,78 @@
 		9CFC76ED27EB649F00E50FCA /* EmailVerification */ = {
 			isa = PBXGroup;
 			children = (
+				9CFC770227EB667000E50FCA /* Support files */,
+				9CFC770327EB668D00E50FCA /* Models */,
+				9CFC770527EB669F00E50FCA /* Views */,
+				9CFC770427EB669700E50FCA /* Controllers */,
+			);
+			path = EmailVerification;
+			sourceTree = "<group>";
+		};
+		9CFC770227EB667000E50FCA /* Support files */ = {
+			isa = PBXGroup;
+			children = (
 				9CFC76EE27EB649F00E50FCA /* AppDelegate.swift */,
 				9CFC76F027EB649F00E50FCA /* SceneDelegate.swift */,
-				9CFC76F227EB649F00E50FCA /* ViewController.swift */,
 				9CFC76F727EB64A100E50FCA /* Assets.xcassets */,
 				9CFC76F927EB64A100E50FCA /* LaunchScreen.storyboard */,
 				9CFC76FC27EB64A100E50FCA /* Info.plist */,
 			);
-			path = EmailVerification;
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		9CFC770327EB668D00E50FCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CFC770427EB669700E50FCA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC76F227EB649F00E50FCA /* VerificationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9CFC770527EB669F00E50FCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC771727EB738600E50FCA /* Cells */,
+				9CFC771A27EB749200E50FCA /* VerificationVC */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CFC770A27EB6C8600E50FCA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC770827EB6BC000E50FCA /* UIColor + Extension.swift */,
+				9CFC770B27EB6CAA00E50FCA /* UIStackView + Extension.swift */,
+				9CFC771127EB714D00E50FCA /* UIView + Extension.swift */,
+				9CFC771327EB717000E50FCA /* GradientView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9CFC771727EB738600E50FCA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC771827EB738F00E50FCA /* MailCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9CFC771A27EB749200E50FCA /* VerificationVC */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC770627EB6A8600E50FCA /* StatusLabel.swift */,
+				9CFC770D27EB6D1000E50FCA /* MailTextField.swift */,
+				9CFC770F27EB70B800E50FCA /* VerificationButton.swift */,
+				9CFC771527EB72EA00E50FCA /* MailsCollectionView.swift */,
+			);
+			path = VerificationVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +217,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CFC76F327EB649F00E50FCA /* ViewController.swift in Sources */,
+				9CFC770727EB6A8600E50FCA /* StatusLabel.swift in Sources */,
+				9CFC76F327EB649F00E50FCA /* VerificationViewController.swift in Sources */,
+				9CFC771427EB717000E50FCA /* GradientView.swift in Sources */,
+				9CFC771027EB70B900E50FCA /* VerificationButton.swift in Sources */,
+				9CFC770E27EB6D1000E50FCA /* MailTextField.swift in Sources */,
 				9CFC76EF27EB649F00E50FCA /* AppDelegate.swift in Sources */,
+				9CFC770C27EB6CAA00E50FCA /* UIStackView + Extension.swift in Sources */,
+				9CFC771627EB72EA00E50FCA /* MailsCollectionView.swift in Sources */,
+				9CFC771927EB738F00E50FCA /* MailCell.swift in Sources */,
 				9CFC76F127EB649F00E50FCA /* SceneDelegate.swift in Sources */,
+				9CFC770927EB6BC000E50FCA /* UIColor + Extension.swift in Sources */,
+				9CFC771227EB714D00E50FCA /* UIView + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +371,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7XP9H5G8CF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EmailVerification/Info.plist;
+				INFOPLIST_FILE = "EmailVerification/Support files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -306,7 +398,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7XP9H5G8CF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EmailVerification/Info.plist;
+				INFOPLIST_FILE = "EmailVerification/Support files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
