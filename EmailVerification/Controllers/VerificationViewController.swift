@@ -68,11 +68,21 @@ class VerificationViewController: UIViewController {
 
 extension VerificationViewController: ActionsMailTextFieldProtocol {
     func typingText(text: String) {
-        print(text)
+        verificationModel.getFilteredMail(text: text)
+        UIView.transition(with: collectionView, duration: 0.35, options: .transitionCrossDissolve) {
+            self.statusLabel.isValid = text.isValid()
+            self.verificationButton.isValid = text.isValid()
+            self.collectionView.reloadData()
+        }
     }
     
     func clearTextField() {
-        print("clear")
+        UIView.transition(with: collectionView, duration: 0.35, options: .transitionCrossDissolve) {
+            self.statusLabel.setDefaultSettings()
+            self.verificationButton.setDefaultSettings()
+            self.verificationModel.filteredMailArray = []
+            self.collectionView.reloadData()
+        }
     }
 }
 
@@ -80,13 +90,16 @@ extension VerificationViewController: ActionsMailTextFieldProtocol {
 
 extension VerificationViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        verificationModel.filteredMailArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IdCell.idMailCell.rawValue,
                                                             for: indexPath) as? MailCell
         else { return UICollectionViewCell() }
+        
+        let mailLabelText = verificationModel.filteredMailArray[indexPath.row]
+        cell.cellConfigure(mailLabelText: mailLabelText)
         
         return cell
     }
@@ -96,7 +109,18 @@ extension VerificationViewController: UICollectionViewDataSource {
 
 extension VerificationViewController: SelectMailProtocol {
     func selectMail(indexPath: IndexPath) {
-        print(indexPath)
+        guard let text = mailTextField.text else { return }
+        verificationModel.getMailName(text: text)
+        let domainMail = verificationModel.filteredMailArray[indexPath.row]
+        let mailFull = verificationModel.nameMail + domainMail
+        mailTextField.text = mailFull
+        statusLabel.isValid = mailFull.isValid()
+        verificationButton.isValid = mailFull.isValid()
+        verificationModel.filteredMailArray = []
+        
+        UIView.transition(with: collectionView, duration: 0.35, options: .transitionCrossDissolve) {
+            self.collectionView.reloadData()
+        }
     }
 }
 
