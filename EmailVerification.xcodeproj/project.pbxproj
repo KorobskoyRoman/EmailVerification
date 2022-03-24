@@ -21,6 +21,7 @@
 		9CFC771427EB717000E50FCA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771327EB717000E50FCA /* GradientView.swift */; };
 		9CFC771627EB72EA00E50FCA /* MailsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771527EB72EA00E50FCA /* MailsCollectionView.swift */; };
 		9CFC771927EB738F00E50FCA /* MailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771827EB738F00E50FCA /* MailCell.swift */; };
+		9CFC771C27EB7F8F00E50FCA /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771B27EB7F8E00E50FCA /* VerificationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9CFC771327EB717000E50FCA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		9CFC771527EB72EA00E50FCA /* MailsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsCollectionView.swift; sourceTree = "<group>"; };
 		9CFC771827EB738F00E50FCA /* MailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCell.swift; sourceTree = "<group>"; };
+		9CFC771B27EB7F8E00E50FCA /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		9CFC770327EB668D00E50FCA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9CFC771B27EB7F8E00E50FCA /* VerificationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				9CFC771927EB738F00E50FCA /* MailCell.swift in Sources */,
 				9CFC76F127EB649F00E50FCA /* SceneDelegate.swift in Sources */,
 				9CFC770927EB6BC000E50FCA /* UIColor + Extension.swift in Sources */,
+				9CFC771C27EB7F8F00E50FCA /* VerificationModel.swift in Sources */,
 				9CFC771227EB714D00E50FCA /* UIView + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

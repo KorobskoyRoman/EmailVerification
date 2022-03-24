@@ -52,11 +52,12 @@ extension MailTextField: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.resignFirstResponder()
     }
-    
+    // исправляем неточность метода shouldChangeCharactersIn
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let text = textField.text else { return true }
-        textFieldDelegate?.typingText(text: text)
-        
+        if let text = textField.text, let rangeText = Range(range, in: text) {
+            let updateText = text.replacingCharacters(in: rangeText, with: string)
+            textFieldDelegate?.typingText(text: updateText)
+        }
         return true
     }
     
