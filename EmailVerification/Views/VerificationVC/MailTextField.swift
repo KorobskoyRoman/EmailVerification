@@ -43,6 +43,7 @@ class MailTextField: UITextField {
         font = UIFont(name: "SF Pro", size: 20)
         tintColor = .mainGray()
         translatesAutoresizingMaskIntoConstraints = false
+        autocapitalizationType = .none
     }
 }
 

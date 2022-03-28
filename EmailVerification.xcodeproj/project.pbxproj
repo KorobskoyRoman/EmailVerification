@@ -23,6 +23,11 @@
 		9CFC771927EB738F00E50FCA /* MailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771827EB738F00E50FCA /* MailCell.swift */; };
 		9CFC771C27EB7F8F00E50FCA /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771B27EB7F8E00E50FCA /* VerificationModel.swift */; };
 		9CFC771E27ECC36700E50FCA /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC771D27ECC36700E50FCA /* String + Extension.swift */; };
+		9CFC772127F1FB7D00E50FCA /* MailApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC772027F1FB7D00E50FCA /* MailApiKey.swift */; };
+		9CFC772327F1FC9E00E50FCA /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC772227F1FC9E00E50FCA /* NetworkRequest.swift */; };
+		9CFC772527F1FEDB00E50FCA /* MailResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC772427F1FEDB00E50FCA /* MailResponseModel.swift */; };
+		9CFC772727F200AD00E50FCA /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC772627F200AD00E50FCA /* NetworkDataFetch.swift */; };
+		9CFC772927F2026300E50FCA /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC772827F2026300E50FCA /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		9CFC771827EB738F00E50FCA /* MailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCell.swift; sourceTree = "<group>"; };
 		9CFC771B27EB7F8E00E50FCA /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 		9CFC771D27ECC36700E50FCA /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		9CFC772027F1FB7D00E50FCA /* MailApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailApiKey.swift; sourceTree = "<group>"; };
+		9CFC772227F1FC9E00E50FCA /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		9CFC772427F1FEDB00E50FCA /* MailResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailResponseModel.swift; sourceTree = "<group>"; };
+		9CFC772627F200AD00E50FCA /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
+		9CFC772827F2026300E50FCA /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				9CFC76ED27EB649F00E50FCA /* EmailVerification */,
-				9CFC770A27EB6C8600E50FCA /* Extensions */,
 				9CFC76EC27EB649F00E50FCA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +90,8 @@
 				9CFC770327EB668D00E50FCA /* Models */,
 				9CFC770527EB669F00E50FCA /* Views */,
 				9CFC770427EB669700E50FCA /* Controllers */,
+				9CFC771F27F1FB6A00E50FCA /* Network */,
+				9CFC770A27EB6C8600E50FCA /* Extensions */,
 			);
 			path = EmailVerification;
 			sourceTree = "<group>";
@@ -101,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				9CFC771B27EB7F8E00E50FCA /* VerificationModel.swift */,
+				9CFC772427F1FEDB00E50FCA /* MailResponseModel.swift */,
+				9CFC772627F200AD00E50FCA /* NetworkDataFetch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,6 +131,7 @@
 			children = (
 				9CFC771727EB738600E50FCA /* Cells */,
 				9CFC771A27EB749200E50FCA /* VerificationVC */,
+				9CFC772827F2026300E50FCA /* Alerts.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +165,15 @@
 				9CFC771527EB72EA00E50FCA /* MailsCollectionView.swift */,
 			);
 			path = VerificationVC;
+			sourceTree = "<group>";
+		};
+		9CFC771F27F1FB6A00E50FCA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC772027F1FB7D00E50FCA /* MailApiKey.swift */,
+				9CFC772227F1FC9E00E50FCA /* NetworkRequest.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CFC770727EB6A8600E50FCA /* StatusLabel.swift in Sources */,
+				9CFC772927F2026300E50FCA /* Alerts.swift in Sources */,
 				9CFC76F327EB649F00E50FCA /* VerificationViewController.swift in Sources */,
+				9CFC772327F1FC9E00E50FCA /* NetworkRequest.swift in Sources */,
 				9CFC771E27ECC36700E50FCA /* String + Extension.swift in Sources */,
 				9CFC771427EB717000E50FCA /* GradientView.swift in Sources */,
 				9CFC771027EB70B900E50FCA /* VerificationButton.swift in Sources */,
@@ -232,11 +257,14 @@
 				9CFC76EF27EB649F00E50FCA /* AppDelegate.swift in Sources */,
 				9CFC770C27EB6CAA00E50FCA /* UIStackView + Extension.swift in Sources */,
 				9CFC771627EB72EA00E50FCA /* MailsCollectionView.swift in Sources */,
+				9CFC772527F1FEDB00E50FCA /* MailResponseModel.swift in Sources */,
 				9CFC771927EB738F00E50FCA /* MailCell.swift in Sources */,
 				9CFC76F127EB649F00E50FCA /* SceneDelegate.swift in Sources */,
+				9CFC772727F200AD00E50FCA /* NetworkDataFetch.swift in Sources */,
 				9CFC770927EB6BC000E50FCA /* UIColor + Extension.swift in Sources */,
 				9CFC771C27EB7F8F00E50FCA /* VerificationModel.swift in Sources */,
 				9CFC771227EB714D00E50FCA /* UIView + Extension.swift in Sources */,
+				9CFC772127F1FB7D00E50FCA /* MailApiKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

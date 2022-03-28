@@ -22,7 +22,7 @@ class VerificationButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        applyGradients(cornerRadius: 15)
         configure()
     }
     
@@ -34,7 +34,7 @@ class VerificationButton: UIButton {
         backgroundColor = .mainWhite()
         setTitle("Verificate", for: .normal)
         setTitleColor(.mainBlack(), for: .normal)
-        layer.cornerRadius = 10
+        layer.cornerRadius = 15
         titleLabel?.font = UIFont(name: "SF Pro", size: 17)
         isEnabled = false
         alpha = 0.5
@@ -44,11 +44,13 @@ class VerificationButton: UIButton {
     private func setNotValidSettings() {
         isEnabled = false
         alpha = 0.5
+        applyGradients(cornerRadius: 15)
     }
     
     private func setValidSettings() {
         isEnabled = true
         alpha = 1
+        applyGradients(cornerRadius: 15)
     }
     
     public func setDefaultSettings() {
