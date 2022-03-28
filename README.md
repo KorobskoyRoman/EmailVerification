@@ -21,3 +21,4 @@
 + Градиентные кнопочки из [репо](https://github.com/KorobskoyRoman/GradientView)
 
 ## 📺 Демонстрация
+<img src=https://user-images.githubusercontent.com/43990145/160446632-89c02d6e-477f-418c-909c-df7528b49bc6.gif height="500">
