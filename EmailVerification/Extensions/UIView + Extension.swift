@@ -12,7 +12,7 @@ extension UIView {
     func applyGradients(cornerRadius: CGFloat) {
         self.backgroundColor = nil
         self.layoutIfNeeded()
-        let gradientView = GradientView(from: .trailing, to: .leading, startColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), endColor: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+        let gradientView = GradientView(from: .trailing, to: .leading, startColor: #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1), endColor: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1))
         if let gradientLayer = gradientView.layer.sublayers?.first as? CAGradientLayer {
             gradientLayer.frame = self.bounds
             gradientLayer.cornerRadius = cornerRadius
